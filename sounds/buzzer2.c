@@ -64,7 +64,7 @@ int const mary_had_a_little_lamb[NUM_MARY_NOTES] = {
     NOTE_B4,NOTE_A4,NOTE_G4,NOTE_A4,NOTE_B4,NOTE_B4,NOTE_B4,
     NOTE_B4,NOTE_A4,NOTE_A4,NOTE_B4,NOTE_A4,NOTE_G4, };
 
-void mary_had_a_little_lamb()
+void mary()
 {
     for(int i = 0; i< NUM_MARY_NOTES; i++) {
         buzz_sound(1000L*1000L, mary_had_a_little_lamb[i]);
@@ -88,7 +88,7 @@ void double_for_loop()
 }
 
 void loop() {
-    mary_had_a_little_lamb();
+    mary();
     rodion_for_loop();
     double_for_loop();
 }
